@@ -75,8 +75,8 @@ if __name__ == "__main__":
     num_threads = 4
     pool = Pool(num_threads)
 
-    train = '/home/anna/PycharmProjects/testJooble/data/train.tsv'
-    test = '/home/anna/PycharmProjects/testJooble/data/test.tsv'
+    train = os.path.join(DATA_DIR, 'train.tsv')
+    test = os.path.join(DATA_DIR, 'test.tsv')
     output = 'test_proc.tsv'
 
     chunk_len = 200
